@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 namespace WebEducationService.Models {
     public class Student {
         public int Id { get; set; }
-        public int MajorId { get; set; }
+        public int? MajorId { get; set; }
         [StringLength(30)]
         [Required]
         public string FirstName { get; set; }
         [StringLength(30)]
         [Required]
         public string LastName { get; set; }
-        [StringLength(4)]
-        public string SAT { get; set; }
-        [StringLength(4)]
-        public string GPA { get; set; }
+        public int SAT { get; set; }
+        public double GPA { get; set; } //make float or double instead of decimal since it will not be changed mathmatically
         public virtual Major Major { get; set; }
 
         public Student() {
