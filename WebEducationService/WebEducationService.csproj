@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20200305191353_added Student class.Designer.cs" />
     <Compile Remove="Migrations\20200305191648_added Student class.cs" />
     <Compile Remove="Migrations\20200305191648_added Student class.Designer.cs" />
+    <Compile Remove="Migrations\20200305211020_Json Ignore.cs" />
+    <Compile Remove="Migrations\20200305211020_Json Ignore.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

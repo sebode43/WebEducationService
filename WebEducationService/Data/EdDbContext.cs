@@ -15,5 +15,7 @@ namespace WebEducationService.Data
 
         public DbSet<Major> Majors { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<WebEducationService.Models.Class> Class { get; set; }
+        public DbSet<WebEducationService.Models.StudentClass> StudentClass { get; set; }
     }
 }

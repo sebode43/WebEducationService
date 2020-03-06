@@ -6,24 +6,19 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace WebEducationService.Models {
-    public class Student {
+    public class Class {
         public int Id { get; set; }
-        public int? MajorId { get; set; }
         [StringLength(30)]
         [Required]
-        public string FirstName { get; set; }
+        public string Subject { get; set; }
         [StringLength(30)]
         [Required]
-        public string LastName { get; set; }
-        public int SAT { get; set; }
-        public double GPA { get; set; } //make float or double instead of decimal since it will not be changed mathmatically
-        public virtual Major Major { get; set; }
+        public string Section { get; set; }
         [JsonIgnore]
         public virtual List<StudentClass> StudentClass { get; set; }
 
-        public Student() {
+        public Class() {
 
         }
-
     }
 }
