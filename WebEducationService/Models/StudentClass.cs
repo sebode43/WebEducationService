@@ -12,7 +12,8 @@ namespace WebEducationService.Models {
         public int ClassId { get; set; }
         [StringLength(3)]
         public string ClassGradeValue { get; set; }
-        public virtual Student Student { get; set; }
+        [JsonIgnore]
         public virtual Class Class { get; set; }
+        public virtual Student Student { get; set; }
     }
 }

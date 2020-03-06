@@ -18,8 +18,6 @@ namespace WebEducationService.Models {
         public int SAT { get; set; }
         public double GPA { get; set; } //make float or double instead of decimal since it will not be changed mathmatically
         public virtual Major Major { get; set; }
-        [JsonIgnore]
-        public virtual List<StudentClass> StudentClass { get; set; }
 
         public Student() {
 

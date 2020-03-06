@@ -14,8 +14,6 @@ namespace WebEducationService.Models {
         [StringLength(30)]
         [Required]
         public string Section { get; set; }
-        [JsonIgnore]
-        public virtual List<StudentClass> StudentClass { get; set; }
 
         public Class() {
 

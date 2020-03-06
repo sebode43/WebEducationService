@@ -130,13 +130,13 @@ namespace WebEducationService.Migrations
             modelBuilder.Entity("WebEducationService.Models.StudentClass", b =>
                 {
                     b.HasOne("WebEducationService.Models.Class", "Class")
-                        .WithMany("StudentClass")
+                        .WithMany()
                         .HasForeignKey("ClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("WebEducationService.Models.Student", "Student")
-                        .WithMany("StudentClass")
+                        .WithMany()
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
